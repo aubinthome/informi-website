@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InforMi - Code & Communication Services</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #181b24;
+      --text: #e8eaf0;
+      --muted: #9aa1b1;
+      --accent: #5b8cff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #232734;
+    }
+    .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; }
+    .logo span { color: var(--accent); }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--text); }
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+    }
+    .hero p { color: var(--muted); font-size: 1.15rem; max-width: 540px; margin: 0 auto 2rem; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { opacity: 0.9; }
+    .services {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid #232734;
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .card h2 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+    .card p { color: var(--muted); }
+    .card .icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      border-top: 1px solid #232734;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Infor<span>Mi</span></div>
+    <nav>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Code & Communication, done right.</h1>
+    <p>InforMi helps companies build great software and communicate clearly with their audience.</p>
+  </section>
+
+  <section class="services" id="services">
+    <div class="card">
+      <div class="icon">💻</div>
+      <h2>Code Services</h2>
+      <p>Web apps, automation, and custom software built to fit your needs. Clean, reliable, and maintainable.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📣</div>
+      <h2>Communication Services</h2>
+      <p>Branding, content, and messaging that gets your ideas across and connects with your customers.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Let's work together - <a href="mailto:contact@informi.com">contact@informi.com</a></p>
+    <p>&copy; 2026 InforMi</p>
+  </footer>
+</body>
+</html>
